@@ -68,6 +68,6 @@ cleandata = function() {
 	colnames(merged$subject) <- c("subject")
 	combined <- bind.data(cx, cy, merged$subject)
 	tidy <- maketidy(combined)
-	write.csv(tidy, "UCI_HAR_tidy.csv", row.names=FALSE)}
+	write.csv(tidy, "tidy.csv", row.names=FALSE)}
 
 
